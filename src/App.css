@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  background-color: rgb(35, 35, 140);
+  color: #fff;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+
+/* Form componment styling */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  /* height: 3.5rem; */
+  border-radius: 5px;
+  font-size: 1.3rem;
+  border: 1px solid gray;
+  padding: 15px 8px;
+  background-color: #fff;
+}
+
+label{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 .7rem 0 3.5rem;
+}
+.add{
+  padding: 14px 12px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: rgb(32, 156, 32);
+  margin-left: 1rem;
+  color: #fff;
+}
+.add:hover{
+  background-color: rgb(21, 135, 21);
+}
+
+
+.stack {
+  justify-content: center;
+}
+
+.records-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.records {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  padding: 0 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.records p {
+  font-size: 1.2rem;
+  font-weight: 450;
+}
+
+.deleteBtn {
+  background-color: rgb(201, 36, 36);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(247, 46, 46);
+  cursor: pointer;
+}
+
+
+@media (max-width : 500px) {
+  form{
+    /* align-items: start; */
+    flex-direction: column;
+  }
+  label{
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+  }
+  .input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .add{
+    margin: 1rem 0 0 0;
+    width: 85%;
+  }
+  .records {
+    width: 100%;
+  }
+
+  .records h3 {
+    font-size: .95rem;
+  }
+
+  .records p {
+    font-size: .8rem;
+    font-weight: 400;
+  }
+
+  .deleteBtn {
+    padding: 5px 10px;
+  }
+}
