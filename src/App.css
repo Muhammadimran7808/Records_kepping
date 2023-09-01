@@ -5,7 +5,6 @@
 .App {
   text-align: center;
 }
-
 h1 {
   margin: 0;
 }
@@ -94,6 +93,7 @@ label{
   background-color: rgb(247, 46, 46);
   cursor: pointer;
 }
+
 
 
 @media (max-width : 500px) {
